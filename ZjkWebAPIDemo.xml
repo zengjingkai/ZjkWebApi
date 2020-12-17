@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZjkWebAPIDemo</name>
+    </assembly>
+    <members>
+        <member name="M:ZjkWebAPIDemo.Controllers.UserController.getUser">
+            <summary>
+            获取用户
+            </summary>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Controllers.UserController.GetRole">
+            <summary>
+            获取角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Controllers.UserController.Login(System.String,System.String)">
+            <summary>
+            登陆
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Services.ICustomAuthenticationManager.Authenticate(System.String,System.String)">
+            <summary>
+            验证
+            </summary>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="P:ZjkWebAPIDemo.Services.ICustomAuthenticationManager.Tokens">
+            <summary>
+            获取Token
+            </summary>
+        </member>
+        <member name="T:ZjkWebAPIDemo.Startup">
+            <summary>
+            程序入口
+            </summary>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            入口构造函数
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:ZjkWebAPIDemo.Startup.Configuration">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            此方法由运行时调用。使用此方法将服务添加到容器中。
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            此方法由运行时调用。使用此方法配置HTTP请求管道。
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:ZjkWebAPIDemo.Utils.GeneralUtils">
+            <summary>
+            常用工具方法
+            </summary>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.DatatableToDictionary(System.Data.DataTable)">
+            <summary>
+            将Datatable转化为Dictionary集合
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.DataRowToObject``1(System.Data.DataRow)">
+            <summary>
+            行转化为对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.DataTableToList``1(System.Data.DataTable)">
+            <summary>
+            DataTable转换为实体类型集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.StringToDouble(System.String,System.Double,System.Int32)">
+            <summary>
+            字符串转double
+            </summary>
+            <param name="value"></param>
+            <param name="defvalue"></param>
+            <param name="decimas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.StringToDouble(System.String)">
+            <summary>
+            字符串转double
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.StringToDouble(System.String,System.Int32)">
+            <summary>
+            字符串转double
+            </summary>
+            <param name="value"></param>
+            <param name="decimas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.StringToDouble(System.String,System.Double)">
+            <summary>
+            字符串转double
+            </summary>
+            <param name="value"></param>
+            <param name="defvalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.StringToDateTime(System.String)">
+            <summary>
+            格式化时间
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.DataTableToJson(System.Data.DataTable)">
+            <summary>
+            datatable转化为JSON字符串
+            </summary>     
+            <param name="dt">datatable数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.ConvertToDataTable``1(System.Data.DataTable)">
+            <summary>
+            DataTable转化为List
+            </summary>
+            <typeparam name="T">对象类</typeparam>
+            <param name="table">数据集</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.ConvertTo``1(System.Collections.Generic.IList{System.Data.DataRow})">
+            <summary>
+            行转List
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ZjkWebAPIDemo.Utils.GeneralUtils.CreateItem``1(System.Data.DataRow)">
+            <summary>
+            创建类
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

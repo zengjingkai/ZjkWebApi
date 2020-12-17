@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using ZjkWebAPIDemo.Models;
 
 namespace ZjkWebAPIDemo
 {
@@ -42,7 +43,7 @@ namespace ZjkWebAPIDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-      
+            services.Add(new ServiceDescriptor(typeof(DbContext),new DbContext(Configuration.GetConnectionString("DefaultConnection"))));
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("V1", new OpenApiInfo
